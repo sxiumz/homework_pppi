@@ -1,0 +1,24 @@
+{
+  "name": "pz5-homework",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "node build.js"
+  },
+  "jest": {
+    "reporters": [
+      "default",
+      [
+        "jest-junit",
+        {
+          "outputFile": "report.xml"
+        }
+      ]
+    ]
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "jest-junit": "^16.0.0"
+  }
+}
